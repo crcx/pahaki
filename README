@@ -2,5 +2,36 @@ Pahaki
 ---------------------------------------------------------------
 This is an API for accessing the Xtify API and some Geocoding
 APIs.
+---------------------------------------------------------------
+Setup:
 
+  1) Register for an Xtify CPID
+  2) Add this CPID to the pahaki.php
+
+
+Functions:
+
+  pahaki_get($url)
+  Used internally to download the XML from various data sources
+
+  pahaki_locate($uuid)
+  Get the Xtify XML for a specific UUID
+
+  pahaki_lat($xml)
+  Get the latitude from an Xtfiy XML string
+
+  pahaki_lon($xml)
+  Get the longitude from an Xtfiy XML string
+
+  pahaki_timestamp($xml)
+  Get the timestamp from an Xtify XML string
+
+  pahaki_getCoords($xml)
+  Get the latitude and longitude as an "lat,lon" string
+
+  pahaki_getState($xml)
+  Reverse geocode the state from an Xtify XML string
+
+  pahaki_getCounty($xml)
+  Reverse geocode the county name from an Xtify XML string
 ---------------------------------------------------------------
