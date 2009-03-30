@@ -53,7 +53,7 @@ function pahaki_timestamp($xml)
 
 function pahaki_getCoords($xml)
 {
-  return pahaki_lon($xml).','.pahaki_lon($xml);
+  return pahaki_lat($xml).','.pahaki_lon($xml);
 }
 
 
